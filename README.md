@@ -11,7 +11,6 @@ This repository contains code for building a Collaborative Filtering Recommender
 - [Making Predictions](#making-predictions)
 - [Finding Similar Movies](#finding-similar-movies)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
