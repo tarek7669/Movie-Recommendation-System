@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prediction</title>
+</head>
+<body>
+
+	<center>
+		<h1>Prediction</h1>
+
+		<h3>{{data}}</h3>
+
+
+		<%	{{data}}.forEach(function(d){
+					{{d}}.forEach(function(index){
+						<div>{{d}}[index]</div>		
+					});
+			});
+
+		%>
+<!-- 		<h2><table><thead>
+			<tr>
+				<th style="text_align: right">y_p</th>
+				<th style="text-align: right;"> movie id</th>
+				<th style="text-align: right;"> rating ave</th>
+				<th>title </th>
+				<th>genres </th>
+			</tr>
+			<tr>
+				<th style="text_align: right">y_p</th>
+				<th style="text-align: right;"> movie id</th>
+				<th style="text-align: right;"> rating ave</th>
+				<th>title </th>
+				<th>genres </th>
+			</tr>
+	</thead></table></h2> -->
+
+	<h2 id="demo"></h2>
+
+
+	</center>
+
+	<main></main>
+	<script>
+		const main = document.querySelector('main');
+
+
+		let htmlString = "";
+
+		for ( let i = 0; i <= {data}.length; i += 10) {
+			htmlString += `<div>${i}</div>`;
+		}
+
+
+		main.innerHTML = htmlString;
+	</script>
+	
+	<script>
+		// var x ="", i;
+		// for (i=0; i<body.length; i++) {
+		//   x = x + body[i];
+		// }
+		// document.getElementById("demo").innerHTML = x;
+
+
+	</script>
+</body>
+</html>
