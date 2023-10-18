@@ -1,22 +1,68 @@
 # Movie-Recommendation-System
-A Movie Recommendation System Movie with Collaborative Filtering
 
-This project is a movie recommendation system built using Python, Pandas, and the Pearson correlation coefficient. It utilizes the MovieLens dataset to recommend movies to users based on their historical preferences and ratings. If you're a movie enthusiast looking for personalized movie recommendations, this system is designed just for you!
+This repository contains code for building a Collaborative Filtering Recommender System. Collaborative filtering is a popular technique used in recommendation systems to provide personalized movie recommendations based on user preferences and interactions.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Training the Model](#training-the-model)
+- [Making Predictions](#making-predictions)
+- [Finding Similar Movies](#finding-similar-movies)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
-Recommendation systems are widely used in today's world to help users discover new products, movies, or content based on their past interactions and preferences. This project focuses on building a movie recommendation system using collaborative filtering, a popular technique in recommendation systems.
+
+Collaborative filtering is a powerful method for building recommendation systems. This code demonstrates how to create a collaborative filtering recommender system using a neural network. It includes steps for data preprocessing, model configuration, training, and making recommendations for both new and existing users.
+
+## Prerequisites
+
+Before using this code, you'll need the following prerequisites:
+
+- Python 3
+- Libraries: NumPy, Pandas, TensorFlow, Matplotlib, scikit-learn
+- Movie dataset (provided in the code)
+
+## Usage
+
+To use this code and build your own collaborative filtering recommender system, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/tarek7669/Movie-Recommendation-System.git
+   cd Movie-Recommendation-System
+   ```
+
+2. Ensure you have the required Python libraries installed:
+
+   ```bash
+   pip install numpy pandas tensorflow matplotlib scikit-learn
+   ```
+
+3. Prepare your movie dataset and place it in the appropriate location in the code.
+
+4. Follow the code's comments and sections to understand how to load data, preprocess it, configure the neural network, train the model, make predictions for new and existing users, and find similar movies.
 
 ## Dataset
-We used the MovieLens dataset, which contains a vast amount of movie ratings data from users. You can find the dataset [here](https://grouplens.org/datasets/movielens/). This dataset includes movie ratings, user information, and movie metadata.
 
-## Recommendation Methodology
-This system utilizes the Pearson correlation coefficient to find similarities between users. The Pearson correlation coefficient measures the linear correlation between two sets of data, in this case, user ratings. The higher the correlation, the more similar two users' preferences are.
+This code uses a movie dataset, which is provided in the code. However, you can replace it with your own dataset. The code reads and processes this dataset to make movie recommendations.
 
-Here's how the recommendation system works:
+## Training the Model
 
-1. Calculate the Pearson correlation coefficient between the target user and all other users in the dataset.
-2. Select the top N most similar users.
-3. Recommend movies that these similar users have rated highly but the target user hasn't seen.
+The code trains a collaborative filtering model using a neural network. It uses user and item data to predict movie ratings. The model is configured with layers, loss functions, and optimizers to optimize the training process.
+
+## Making Predictions
+
+This code allows you to make predictions for both new and existing users. For new users, you can provide genre preferences and receive movie recommendations. For existing users, the model predicts their ratings for movies.
+
+## Finding Similar Movies
+
+One of the highlights of this code is the ability to find similar movies. The script computes the squared distance between movie feature vectors and identifies movies that are similar based on these vectors. It provides a table of similar movies to help users discover content they may like.
 
 ## Contributing
-Contributions to this project are welcome! If you have ideas for improvements or new features, please open an issue or submit a pull request.
+
+Contributions to this project are welcome! If you have ideas for improvements, bug fixes, or additional features, please feel free to open an issue or submit a pull request.
+
